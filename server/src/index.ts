@@ -25,7 +25,7 @@ app.get('/health', (req: Request, res: Response) => {
 });
 
 app.listen(PORT, () => {
-  console.log(\`✅ [SERVER] Express server is running on http://localhost:\${PORT}\`);
+  console.log(`✅ [SERVER] Express server is running on http://localhost:${PORT}`);
 });
 
 process.on('SIGINT', () => {
