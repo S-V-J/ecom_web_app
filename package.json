@@ -1,0 +1,23 @@
+{
+  "name": "ecom_web_app",
+  "version": "1.0.0",
+  "description": "Universal E-Commerce System - Interactive Demo",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "lint": "npm run lint --prefix server && npm run lint --prefix client"
+  },
+  "author": "S-V-J",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}
