@@ -31,8 +31,17 @@ vite.config.js.timestamp-*
 db/*.db
 db/*.sqlite
 db/*.sqlite3
+db/*.db-shm
+db/*.db-wal
 /uploads/*
 !/uploads/.gitkeep
+
+# ==========================================
+# CURL / TESTING ARTIFACTS
+# ==========================================
+cookies.txt
+admin-cookies.txt
+*.cookies
 
 # ==========================================
 # LOGS & CACHE
